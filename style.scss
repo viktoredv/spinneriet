@@ -11,7 +11,7 @@ $yellow: #FFC900;
 $purple: #3C00D4;
 $white: #fff;
 $black: #000;
-$marg: 2%;
+$pad: 2%;
 $sans-15: 400 15px/150% "Manrope", sans-serif;
 $sans-22: 600 22px/120% "Manrope", sans-serif;
 $sans-30: 30px/100% "Ekta Sans", sans-serif;
@@ -40,7 +40,7 @@ p {
 }
 /* header */
 .header {
-    padding: $marg;
+    padding: $pad;
     color: $white;
     background: $black;
     display: flex;
@@ -56,7 +56,9 @@ p {
     display: flex;
 }
 
-.menu > a {}
+.menu > a:last-child:after {
+    content: "-";
+}
 // container
 
 .container {}
@@ -90,7 +92,7 @@ p {
 }
 
 .col > * {
-    margin: $marg;
+    padding: $pad;
 }
 
 .col > h1 {
@@ -115,7 +117,7 @@ p {
 .col > *:first-child {}
 
 .footer {
-    padding: $marg;
+    padding: $pad;
     color: $white;
     background: $purple;
 }

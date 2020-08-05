@@ -37,6 +37,9 @@ p {
 .menu {
   display: flex; }
 
+.menu > a:last-child:after {
+  content: "-"; }
+
 .yellow-black {
   background: #FFC900;
   color: #000; }
@@ -60,7 +63,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-between; } }
 .col > * {
-  margin: 2%; }
+  padding: 2%; }
 
 .col > h1 {
   flex: 1; }
