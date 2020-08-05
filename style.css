@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap");
+@font-face {
+  font-family: 'Ekta Sans';
+  src: url("ekta-sans-webfont.woff2") format("woff2"), url("ekta-sans-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font: 400 15px/150% "Manrope", sans-serif;
+  margin: 0; }
+
+h1 {
+  font: 30px/100% "Ekta Sans", sans-serif;
+  margin: 0; }
+
+h2 {
+  font: 600 22px/120% "Manrope", sans-serif;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+/* header */
+.header {
+  padding: 3%;
+  color: #fff;
+  background: #000;
+  display: flex;
+  flex-wrap: wrap; }
+
+.logo {
+  font: 30px/100% "Ekta Sans", sans-serif;
+  flex: 1; }
+
+.menu {
+  display: flex;
+  justify-content: space-around; }
+
+.yellow-black {
+  background: #FFC900;
+  color: #000; }
+
+.pink-purple {
+  background: #FF3659;
+  color: #3C00D4; }
+
+.purple-yellow {
+  background: #3C00D4;
+  color: #FFC900; }
+
+.white-pink {
+  background: #fff;
+  color: #FF3659; }
+
+@media (min-width: 600px) {
+  .col {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+.col > * {
+  padding: 3%; }
+
+.col > h1 {
+  flex: 2; }
+
+.col > h2 {
+  flex: 2; }
+
+.col > p {
+  flex: 4; }
+
+.col > img {
+  background: #fff;
+  flex: 3; }
+
+.footer {
+  padding: 3%;
+  color: #fff;
+  background: #3C00D4; }
+
+/*# sourceMappingURL=style.css.map */

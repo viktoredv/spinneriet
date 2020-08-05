@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+@font-face {
+    font-family: 'Ekta Sans';
+    src: url("ekta-sans-webfont.woff2") format('woff2'), url("ekta-sans-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+// variables
+$pink: #FF3659;
+$yellow: #FFC900;
+$purple: #3C00D4;
+$white: #fff;
+$black: #000;
+$marg: 3%;
+$sans-15: 400 15px/150% "Manrope", sans-serif;
+$sans-22: 600 22px/120% "Manrope", sans-serif;
+$sans-30: 30px/100% "Ekta Sans", sans-serif;
+$sans-45: 45px/100% "Ekta Sans", sans-serif;
+@media only screen and (max-width: 900px) {}
+
+body {
+    font: $sans-15;
+    margin: 0;
+}
+
+h1 {
+    font: $sans-30;
+    margin: 0;
+}
+
+h2 {
+    font: $sans-22;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+/* header */
+.header {
+    padding: $marg;
+    color: $white;
+    background: $black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font: $sans-30;
+    flex: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu > a {}
+// container
+
+.container {}
+
+.yellow-black {
+    background: $yellow;
+    color: $black;
+}
+
+.pink-purple {
+    background: $pink;
+    color: $purple;
+}
+
+.purple-yellow {
+    background: $purple;
+    color: $yellow;
+}
+
+.white-pink {
+    background: $white;
+    color: $pink;
+}
+@media (min-width: 600px) {
+    .col {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.col > * {
+    padding: $marg;
+}
+
+.col > h1 {
+    flex: 2;
+}
+
+.col > h2 {
+    flex: 2;
+}
+
+.col > p {
+    flex: 4;
+}
+
+.col > img {
+    background: $white;
+    flex: 3;
+}
+
+.col > *:last-child {}
+
+.col > *:first-child {}
+
+.footer {
+    padding: $marg;
+    color: $white;
+    background: $purple;
+}
