@@ -11,7 +11,8 @@ $yellow: #FFC900;
 $purple: #3C00D4;
 $white: #fff;
 $black: #000;
-$pad: 2%;
+$padBig: 40px;
+$padSmall: 20px;
 $sans-15: 400 15px/150% "Manrope", sans-serif;
 $sans-22: 600 22px/120% "Manrope", sans-serif;
 $sans-30: 30px/100% "Ekta Sans", sans-serif;
@@ -25,43 +26,43 @@ body {
 h1 {
     font: $sans-30;
     margin: 0;
-    max-width: 80%;
 }
 
 h2 {
     font: $sans-22;
     margin: 0;
-    max-width: 80%;
 }
 
 p {
     margin: 0;
-    max-width: 80%;
 }
-/* header */
+
 .header {
-    padding: $pad;
+    padding: $padBig;
     color: $white;
     background: $black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .logo {
     font: $sans-30;
-    flex: 1;
 }
 
-.menu {
-    display: flex;
+.menu {}
+
+.menu a {}
+
+.menu > a:not(:last-child):after {
+    content: "\00a0 \00a0 \00a0 ";
 }
 
-.menu > a:last-child:after {
-    content: "-";
+.container {
+    display: grid;
+    height: 75vh;
+    grid-template-rows: auto 1fr auto;
 }
-// container
-
-.container {}
 
 .yellow-black {
     background: $yellow;
@@ -82,6 +83,11 @@ p {
     background: $white;
     color: $pink;
 }
+
+.pink-white {
+    background: $pink;
+    color: $white;
+}
 @media (min-width: 900px) {
     .col {
         display: flex;
@@ -92,24 +98,43 @@ p {
 }
 
 .col > * {
-    padding: $pad;
+    padding: $padSmall;
 }
 
-.col > h1 {
+.col {
+    padding: $padSmall;
+}
+
+.flex-1 {
     flex: 1;
 }
 
-.col > h2 {
-    flex: 1;
-}
-
-.col > p {
+.flex-2 {
     flex: 2;
 }
 
-.col > img {
-    background: $white;
+.flex-3 {
     flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-4 {
+    order: 4;
 }
 
 .col > *:last-child {}
@@ -117,7 +142,7 @@ p {
 .col > *:first-child {}
 
 .footer {
-    padding: $pad;
+    padding: $padBig;
     color: $white;
     background: $purple;
 }

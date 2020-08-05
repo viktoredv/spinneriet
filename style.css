@@ -10,35 +10,33 @@ body {
 
 h1 {
   font: 30px/100% "Ekta Sans", sans-serif;
-  margin: 0;
-  max-width: 80%; }
+  margin: 0; }
 
 h2 {
   font: 600 22px/120% "Manrope", sans-serif;
-  margin: 0;
-  max-width: 80%; }
+  margin: 0; }
 
 p {
-  margin: 0;
-  max-width: 80%; }
+  margin: 0; }
 
-/* header */
 .header {
-  padding: 2%;
+  padding: 40px;
   color: #fff;
   background: #000;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .logo {
-  font: 30px/100% "Ekta Sans", sans-serif;
-  flex: 1; }
+  font: 30px/100% "Ekta Sans", sans-serif; }
 
-.menu {
-  display: flex; }
+.menu > a:not(:last-child):after {
+  content: "\00a0 \00a0 \00a0 "; }
 
-.menu > a:last-child:after {
-  content: "-"; }
+.container {
+  display: grid;
+  height: 75vh;
+  grid-template-rows: auto 1fr auto; }
 
 .yellow-black {
   background: #FFC900;
@@ -56,6 +54,10 @@ p {
   background: #fff;
   color: #FF3659; }
 
+.pink-white {
+  background: #FF3659;
+  color: #fff; }
+
 @media (min-width: 900px) {
   .col {
     display: flex;
@@ -63,23 +65,37 @@ p {
     flex-wrap: wrap;
     justify-content: space-between; } }
 .col > * {
-  padding: 2%; }
+  padding: 20px; }
 
-.col > h1 {
+.col {
+  padding: 20px; }
+
+.flex-1 {
   flex: 1; }
 
-.col > h2 {
-  flex: 1; }
-
-.col > p {
+.flex-2 {
   flex: 2; }
 
-.col > img {
-  background: #fff;
+.flex-3 {
   flex: 3; }
 
+.flex-4 {
+  flex: 4; }
+
+.order-1 {
+  order: 1; }
+
+.order-2 {
+  order: 2; }
+
+.order-3 {
+  order: 3; }
+
+.order-4 {
+  order: 4; }
+
 .footer {
-  padding: 2%;
+  padding: 40px;
   color: #fff;
   background: #3C00D4; }
 
